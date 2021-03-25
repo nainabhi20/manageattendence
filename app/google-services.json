@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "874619496085",
+    "firebase_url": "https://chattings-cbdcc.firebaseio.com",
+    "project_id": "chattings-cbdcc",
+    "storage_bucket": "chattings-cbdcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874619496085:android:91c5b91aa36916517b5d9c",
+        "android_client_info": {
+          "package_name": "com.example.attendence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmgYAayQfkVH_-haE5iCrUlMzRi0bLBOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874619496085:android:ecae5da0f1b405d87b5d9c",
+        "android_client_info": {
+          "package_name": "com.example.manageattendence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmgYAayQfkVH_-haE5iCrUlMzRi0bLBOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874619496085:android:d99c67911ed0cb097b5d9c",
+        "android_client_info": {
+          "package_name": "com.example.nain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmgYAayQfkVH_-haE5iCrUlMzRi0bLBOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874619496085-ig990ss9fvl87dri8bpi19j863c5e6k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

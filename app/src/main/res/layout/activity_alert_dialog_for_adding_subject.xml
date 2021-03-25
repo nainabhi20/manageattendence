@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.Alert_dialog_for_adding_subject">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="417dp"
+        android:layout_height="284dp"
+        android:background="@drawable/home_fragment_constract_layout_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:text="subject name:"
+            android:textColor="#F6F5F5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <EditText
+            android:id="@+id/subject_name_alert_box_add_subject"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:ems="10"
+            android:hint="eg:-Mathematics"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="#FAF6F6"
+            android:textColorHint="#FFFCFC"
+            app:layout_constraintBottom_toBottomOf="@+id/textView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toTopOf="@+id/textView17"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="142dp"
+            android:layout_height="33dp"
+            android:text="Inittial Attendence:"
+            android:textColor="#F3F3F3"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintVertical_bias="0.088" />
+
+        <EditText
+            android:id="@+id/initial_attendence_alert_box_add_subject"
+            android:layout_width="81dp"
+            android:layout_height="36dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:ems="10"
+            android:hint="total presents"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textColor="#F3EBEB"
+            android:textColorHint="#FDF4F4"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="@+id/subject_name_alert_box_add_subject"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="@+id/subject_name_alert_box_add_subject"
+            app:layout_constraintTop_toTopOf="@+id/textView18"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="153dp"
+            android:layout_height="32dp"
+            android:text="Initial total classes:"
+            android:textColor="#FAF1F1"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView18"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:layout_constraintVertical_bias="0.153" />
+
+        <EditText
+            android:id="@+id/initial_total_attendence_alert_box_add_subject"
+            android:layout_width="87dp"
+            android:layout_height="38dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:ems="10"
+            android:hint="Total initial calsses"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textColor="#FDF8F8"
+            android:textColorHint="#FFF7F7"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="@+id/initial_attendence_alert_box_add_subject"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/initial_attendence_alert_box_add_subject"
+            app:layout_constraintTop_toTopOf="@+id/textView19"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/add_alert_box_add_subject"
+            android:layout_width="98dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_back"
+            android:text="Add"
+            android:textColor="#F6EEEE"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/initial_total_attendence_alert_box_add_subject"
+            app:layout_constraintVertical_bias="0.725" />
+
+        <Button
+            android:id="@+id/cancel_alert_box_add_subject"
+            android:layout_width="96dp"
+            android:layout_height="26dp"
+            android:background="@drawable/cancel_button_background"
+            android:text="cancel"
+            android:textColor="#FBF7F7"
+            app:layout_constraintBottom_toBottomOf="@+id/add_alert_box_add_subject"
+            app:layout_constraintEnd_toStartOf="@+id/add_alert_box_add_subject"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/add_alert_box_add_subject"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

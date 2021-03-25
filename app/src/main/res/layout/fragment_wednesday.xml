@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.wednesday">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background_file_for_navigation_drawerlist"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/add_subject_wednesday_time_table"
+            android:layout_width="292dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_back"
+            android:text="Add subject"
+            android:textColor="#FDFBFB"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992" />
+
+        <GridView
+            android:id="@+id/grid_view_wednesday"
+            android:layout_width="409dp"
+            android:layout_height="647dp"
+            android:numColumns="1"
+            app:layout_constraintBottom_toTopOf="@+id/add_subject_wednesday_time_table"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

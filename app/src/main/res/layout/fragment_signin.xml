@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".signin">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/home_fragment_constract_layout_background"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/email_sign_in"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10sp"
+            android:textColor="#F6F3F3"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.264" />
+
+        <EditText
+            android:id="@+id/password_sign_in"
+            android:layout_width="252dp"
+            android:layout_height="41dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:ems="10"
+            android:hint="Pass-ward"
+            android:inputType="textPassword"
+            android:paddingLeft="10sp"
+            android:textColor="#F8F2F2"
+            android:textColorHint="#F6F1F1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/email_sign_in"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_sign_in"
+            app:layout_constraintTop_toBottomOf="@+id/email_sign_in"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <Button
+            android:id="@+id/sigin_sign_in"
+            android:layout_width="115dp"
+            android:layout_height="27dp"
+            android:background="@drawable/button_back"
+            android:text="Sign in"
+            android:textColor="#EFEEEE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.273"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_sign_in"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="348dp"
+            android:layout_height="46dp"
+            android:background="@drawable/background_fro_edit_text"
+            android:paddingLeft="100sp"
+            android:paddingTop="15sp"
+            android:text="slide right to create new account"
+            android:textColor="#FFF3F3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sigin_sign_in"
+            app:layout_constraintVertical_bias="0.687" />
+
+        <Button
+            android:id="@+id/slide_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_back"
+            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+            app:layout_constraintEnd_toEndOf="@+id/textView31"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toTopOf="@+id/textView31"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

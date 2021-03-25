@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_file_for_navigation_drawerlist"
+    tools:context=".ui.home.HomeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="402dp"
+        android:layout_height="135dp"
+        android:background="@drawable/home_fragment_constract_layout_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011">
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:textColor="#EFEEEE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="sans-serif-condensed-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall attendence"
+            android:textColor="#C8C5C5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="sans-serif-condensed-light"
+            app:layout_constraintEnd_toEndOf="@+id/goal"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintStart_toStartOf="@+id/goal"
+            app:layout_constraintTop_toBottomOf="@+id/goal"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <Button
+            android:id="@+id/add_subject_home_button"
+            android:layout_width="102dp"
+            android:layout_height="25dp"
+            android:background="@drawable/button_back"
+            android:text="Add subject"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.855" />
+
+        <TextView
+            android:id="@+id/overall_attendence"
+            android:layout_width="51dp"
+            android:layout_height="18dp"
+            android:text="33%"
+            android:textColor="#FAF6F6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/textView16"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/goal_image_view_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_flag_24"
+            app:layout_constraintBottom_toBottomOf="@+id/goal"
+            app:layout_constraintEnd_toStartOf="@+id/goal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/goal" />
+
+        <TextView
+            android:id="@+id/goal_text_view_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="100"
+            android:textColor="#FFFEFE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/goal"
+            app:layout_constraintEnd_toEndOf="@+id/overall_attendence"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toEndOf="@+id/goal"
+            app:layout_constraintTop_toTopOf="@+id/goal"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/time_table_image_view_home_fragment"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:background="@drawable/background_for_image_view_calender"
+            android:paddingLeft="5sp"
+            android:paddingTop="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_subject_home_button"
+            app:layout_constraintEnd_toStartOf="@+id/overall_attendence"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/add_subject_home_button"
+            app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+        <ImageView
+            android:id="@+id/setting_image_view_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_settings_24"
+            android:background="@drawable/background_for_image_view_setting"
+            app:layout_constraintBottom_toBottomOf="@+id/time_table_image_view_home_fragment"
+            app:layout_constraintEnd_toStartOf="@+id/time_table_image_view_home_fragment"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/time_table_image_view_home_fragment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/list_view_home_fragment"
+        android:layout_width="409dp"
+        android:layout_height="588dp"
+        android:layout_marginTop="4dp"
+        android:dividerHeight="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

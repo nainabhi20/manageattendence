@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manageattendence">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sneakbar_design"></activity>
+        <activity android:name=".history_list_view" />
+        <activity android:name=".history" />
+        <activity android:name=".signinsignout" />
+        <activity android:name=".setting" />
+        <activity android:name=".ui.main.add_subject_time_table" />
+        <activity android:name=".ui.main.grid_view_designing_time_table" />
+        <activity
+            android:name=".time_table"
+            android:label="@string/title_activity_time_table"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".setgoals" />
+        <activity android:name=".ui.home.edit_subject_detail" />
+        <activity android:name=".ui.home.alert_dialog_for_delete_and_reset" />
+        <activity android:name=".ui.home.subject_list_view_in_add_subject" />
+        <activity android:name=".ui.home.Alert_dialog_for_adding_subject" />
+        <activity android:name=".ui.home.add_subject" />
+        <activity android:name=".ui.home.subject_list_view_in_home_fragments" />
+        <activity android:name=".bug_info" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
